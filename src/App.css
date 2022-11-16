@@ -1,0 +1,142 @@
+#root {
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;}
+
+:root{
+  --text: 
+}
+.App {
+  display: grid;
+  gap: 1rem;
+ 
+}
+
+/* FORM */
+.form {
+
+  box-shadow: 3px 4px 11px 2px;
+  background-color: #0e5c5f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 14rem;
+}
+.form__full-name{
+  display: flex;
+  gap: 2px;
+}
+.form__full-name input{
+  width: 8rem;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: none;
+}
+.form__info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form__info input{
+  width: 8rem;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: none;
+}
+.info__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.form__info .date{
+  width: 11rem;
+}
+.form__button {
+  display: flex;
+  justify-content: space-around;
+}
+.button{
+  border-style: none;
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+
+
+
+/* List */
+.user__flex{
+  /* grid-area: list; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.user__container {
+  box-shadow: 2px 1px 10px 3px;
+  background-color: #b7c6d0;
+  padding: 15px;
+  border-radius: 10px;
+}
+.user__email{
+  position: relative;
+}
+.user__email i{
+  position: absolute;
+  top: 0;
+  left: 36px;
+}
+.user__birthday{
+  position: relative;
+}
+.user__birthday i{
+  position: absolute;
+  top: 0;
+  left: 53px;
+}
+.list__btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .App{
+    grid-template-columns: 2fr 1fr;
+  }
+  .form{
+    grid-column: 2/3;
+  }
+  .user__flex{
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .App {
+    display: flex;
+    justify-content: space-around;
+    gap: 19rem;
+    width: 100vh;
+    flex-direction: row-reverse;
+  }
+  .user__container{
+    width: 18rem;
+  }
+  .form{
+    padding: 2rem;
+    height: 17rem;
+  }
+  .user__email i {
+    left: 23px;
+  }
+}

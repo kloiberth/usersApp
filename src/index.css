@@ -1,0 +1,16 @@
+body {
+  background-image: url(https://www.luisan.net/blog/wp-content/uploads/2014/09/color_small_mk-e1549454603143.png);
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+@media screen and (min-width: 1024px) {
+  body{
+    min-width: 320px;
+    min-height: 100vh;
+
+  }
+}
